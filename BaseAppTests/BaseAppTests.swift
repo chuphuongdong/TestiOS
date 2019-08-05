@@ -43,12 +43,6 @@ class BaseAppTests: XCTestCase {
         XCTAssertEqual("a", "a")
     }
     
-    func testExample5() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssertEqual("a", "a")
-    }
-
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

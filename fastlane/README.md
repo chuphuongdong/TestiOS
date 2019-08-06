@@ -20,12 +20,7 @@ or alternatively using `brew cask install fastlane`
 ```
 fastlane ios CI
 ```
-Description of what the lane does
-### ios CD
-```
-fastlane ios CD
-```
-
+Runs all the tests
 
 ----
 

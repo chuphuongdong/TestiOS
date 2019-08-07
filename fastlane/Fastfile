@@ -22,4 +22,10 @@ platform :ios do
       devices: ["iPhone 8"],
       scheme: "BaseApp")
   end
+  lane :checkCode do
+     swiftlint(
+      mode: :lint,
+      ignore_exit_status: false
+     )
+   end
 end

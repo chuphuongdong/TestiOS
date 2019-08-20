@@ -41,6 +41,8 @@ platform :ios do
 lane :ccv do
 slather(
   scheme: "BaseApp",
-  proj: "BaseApp.xcodeproj")
+  proj: "BaseApp.xcodeproj",
+  jenkins: true 
+)
 end
 end

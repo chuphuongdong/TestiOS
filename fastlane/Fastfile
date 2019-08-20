@@ -38,4 +38,9 @@ platform :ios do
             notifications: true) # Should this distribution notify your testers via email?
 
     end
+lane :ccv do
+slather(
+  scheme: "BaseApp",
+  proj: "BaseApp.xcodeproj")
+end
 end

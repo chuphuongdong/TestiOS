@@ -44,10 +44,11 @@ project: "BaseApp.xcodeproj",
 code_coverage: true,
 fail_build: false
 )
-slather(
+xcov(
   scheme: "BaseApp",
-  proj: "BaseApp.xcodeproj",
-  jenkins: true
+  project: "BaseApp.xcodeproj",
+minimum_coverage_percentage: 75.0,
+output_directory: "xcov_output"
 )
 end
 lane :checkCode do

@@ -39,6 +39,11 @@ platform :ios do
 
     end
 lane :ccv do
+scan(scheme: "BaseApp",
+project: "BaseApp.xcodeproj",
+code_coverage: true,
+build_for_testing: true
+)
 slather(
   scheme: "BaseApp",
   proj: "BaseApp.xcodeproj",

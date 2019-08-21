@@ -54,7 +54,9 @@ end
 lane :checkCode do
      swiftlint(
       mode: :lint,
-      ignore_exit_status: false
+      ignore_exit_status: false,
+      reporter: "html",
+     output_file: "swiftlint.result.html"
      )
    end
 end

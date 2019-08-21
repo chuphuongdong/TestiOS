@@ -42,7 +42,7 @@ lane :ccv do
 scan(scheme: "BaseApp",
 project: "BaseApp.xcodeproj",
 code_coverage: true,
-build_for_testing: true
+fail_build: false
 )
 slather(
   scheme: "BaseApp",

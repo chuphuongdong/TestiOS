@@ -42,7 +42,13 @@ lane :ccv do
 slather(
   scheme: "BaseApp",
   proj: "BaseApp.xcodeproj",
-  jenkins: true 
+  jenkins: true
 )
 end
+lane :checkCode do
+     swiftlint(
+      mode: :lint,
+      ignore_exit_status: false
+     )
+   end
 end

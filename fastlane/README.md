@@ -31,6 +31,11 @@ fastlane ios CD
 fastlane ios ccv
 ```
 
+### ios checkCode
+```
+fastlane ios checkCode
+```
+
 
 ----
 

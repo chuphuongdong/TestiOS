@@ -47,7 +47,7 @@ fail_build: false
 xcov(
   scheme: "BaseApp",
   project: "BaseApp.xcodeproj",
-minimum_coverage_percentage: 20.0,
+minimum_coverage_percentage: 80.0,
 output_directory: "xcov_output"
 )
 end
@@ -56,7 +56,8 @@ lane :checkCode do
       mode: :lint,
       ignore_exit_status: false,
       reporter: "html",
-     output_file: "swiftlint.result.html"
+     output_file: "swiftlint.result.html",
+     strict: true
      )
    end
 end

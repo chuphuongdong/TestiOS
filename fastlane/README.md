@@ -26,6 +26,16 @@ Description of what the lane does
 fastlane ios CD
 ```
 
+### ios ccv
+```
+fastlane ios ccv
+```
+
+### ios checkCode
+```
+fastlane ios checkCode
+```
+
 
 ----
 
